@@ -10,10 +10,11 @@ from email.mime.multipart import MIMEMultipart
 # ============================================================
 #  CONFIGURACION
 # ============================================================
-ANTHROPIC_API_KEY = "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"
+import os
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")
 EMAIL_DESTINO = "pcu16030771@gmail.com"
 EMAIL_REMITENTE = "pcu16030771@gmail.com"
-EMAIL_PASSWORD = "meofmlnfowtlvsgf"
 MONTO_SUGERIDO = 2
 
 API_GAMMA = "https://gamma-api.polymarket.com/markets"
