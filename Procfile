@@ -1,0 +1,1 @@
+worker: python polymarket_fase4.py
